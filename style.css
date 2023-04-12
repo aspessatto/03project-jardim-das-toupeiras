@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toupeira {
+  background-image: url(assets/toupeira6.svg);
+  width: 223px;
+  height: 169px;
+}
+
+.toupeiras {
+  display: grid;
+  grid-template-areas:
+  "A B C D"
+  "E F G H"
+  "I J K L";
+  padding: 15rem;
+}
+
+.jardim div:nth-child(1) {
+  grid-area: A;
+}
+.jardim div:nth-child(2) {
+  grid-area: B;
+  animation: whackamole 600ms infinite;
+}
+.jardim div:nth-child(3) {
+  grid-area: C;
+}
+.jardim div:nth-child(4) {
+  grid-area: D;
+  animation: whackamole 600ms 300ms infinite;
+}
+.jardim div:nth-child(5) {
+  grid-area: E;
+}
+.jardim div:nth-child(6) {
+  grid-area: F;
+}
+.jardim div:nth-child(7) {
+  grid-area: G;
+  animation: whackamole 600ms 200ms infinite;
+}
+.jardim div:nth-child(8) {
+  grid-area: H;
+}
+.jardim div:nth-child(9) {
+  grid-area: I;
+  animation: whackamole 600ms 400ms infinite;
+}
+.jardim div:nth-child(10) {
+  grid-area: J;
+}
+.jardim div:nth-child(11) {
+  grid-area: K;
+}
+.jardim div:nth-child(12) {
+  grid-area: L;
+  animation: whackamole 600ms 700ms infinite;
+}
+
+@keyframes whackamole {
+  0% {
+    background-image: url(assets/toupeira1.svg);
+  }
+  20% {
+    background-image: url(assets/toupeira2.svg);
+  }
+  40% {
+    background-image: url(assets/toupeira3.svg);
+  }
+  60% {
+    background-image: url(assets/toupeira4.svg);
+  }
+  80% {
+    background-image: url(assets/toupeira5.svg);
+  }
+  100% {
+    background-image: url(assets/toupeira6.svg);
+  }
+}
